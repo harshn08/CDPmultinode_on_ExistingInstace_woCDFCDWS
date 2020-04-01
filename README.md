@@ -1,7 +1,6 @@
-# CDPmultinode_on_ExistingInstace_woCDFCDWS
-CDPmultinode on existing Instance without CDF and CDSW
+# CDP Multinode on Existing Instace/s (W/O CDF and CDWS)
+on Docker using Docker on Mac/Windows 10
 
-CDP Multinode script using Docker on Mac/Windows 10, 
 This script requires existing 4 node intances Eg : on AWS(1 4xlarge and 3 2xlarge) with 100gb space 
 CDP DC will be installed with full security (Kerberos,TLS and KMS) 
 
@@ -124,9 +123,9 @@ eg Owner,project,enddate,vpc,region,subnet and security group.
      image: ami-02eac2c0129f6376b <replace me> # CentOS-7 x86_6
    
    tags:
-    owner: user.test<replace me>
-    enddate: "01312020"<replace me>
-    project: ansible-test<replace me>
+    owner: user.test
+    enddate: "01312020"
+    project: multinode
 
 3>Open and modify filepath for license in stock.cluster.krb.yml. where it says <replace me>
 Example:
@@ -152,9 +151,9 @@ localhost
 6>Change the following information in config/stock.cluster.krb.yml
  a> Add the private_key value eg: {{ sunita_key }}
  Example:
- # from vault file , replace <replace me> it with your own key  
+   #from vault file , replace <replace me> it with your own key  
 	private_key: "{{ replace_key }}"
-	
+
     
 7> For Auto_TLS, you will need a CDP DC license file from cloudera.
 Specify the path to that file as indicated below, whereever it says <replace me> 
