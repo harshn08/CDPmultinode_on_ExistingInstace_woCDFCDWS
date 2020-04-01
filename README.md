@@ -1,4 +1,4 @@
-# CDP Multinode on Existing Instance/s (W/O CDF and CDWS)
+# CDP Multinode on Existing Instance/s (W/O CDF and CDSW)
 on Docker using Docker on Mac/Windows 10
 
 This script requires existing 4 node intances Eg : on AWS(1 4xlarge and 3 2xlarge) with 100gb space 
