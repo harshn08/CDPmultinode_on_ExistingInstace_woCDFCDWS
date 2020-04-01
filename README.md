@@ -1,5 +1,5 @@
 # CDP Multinode on Existing Instance/s (W/O CDF and CDSW)
-on Docker using Docker on Mac/Windows 10
+using Docker on Mac/Windows 10
 
 This script requires existing 4 node intances Eg : on AWS(1 4xlarge and 3 2xlarge) with 100gb space 
 CDP DC will be installed with full security (Kerberos,TLS and KMS) 
@@ -34,7 +34,7 @@ Download scripts,CDP DC bits and licence info:
 	3> Copy the AWS  ".pem" file into the home directory (Users/ssharma)
 	4> Create a directory say, mn-script. unzip the files here.  
 
-#Docker Setup:
+Docker Setup:
 
 	On both Windows and Mac OS, Following commands are used to setup the environment.
 	We will execute the scripts to setup the 4-node cluster with all the relevant services. 
@@ -110,7 +110,7 @@ Download scripts,CDP DC bits and licence info:
     	export AWS_ACCESS_KEY_ID=AKIAQxxxxxx
     	export AWS_SECRET_ACCESS_KEY=uOI3N5KQZ8zbxxxxxxxxxx
 
-#Modify the configuration file:
+Modify the configuration file:
 
 	At this point, you should have the script under a folder called mn-script.This folder should have the bin directory. We will also need access to the vault, pem and password files that are stored in the home directory. The home directory should be accessible via docker mapping of the folders.
 
