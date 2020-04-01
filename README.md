@@ -8,9 +8,9 @@ Updated on March 31, 2020
 
 Assumptions:
 
-	1> This document assumes that you have access to an AWS account
-	2> Partners or their IT Dept can create their own VPC, Subnet, key-pair and security group 
-	in the same availability zone that will be used to create multi node instances in the script below.
+	1> This document assumes that you have access to your existing instances
+	2> If not , Partners or their IT Dept can create their own VPC, Subnet, key-pair and security group 
+	in the same availability zone that will be used to create multi node instances in the script below. ( or use default/s)
 	3> Request cloudera license from partner portal  
 	4> Access to valid cloudera.com credentials to download binaries
 	5> Access to the following versions of docker are used for Mac OS and Windows 10 Pro. 
@@ -23,7 +23,7 @@ AWS Dependencies:
 	1> AWS keypair (e.g. “.pem”) files to use with the scripts
 	2> Decide on AWS region/AZ (us-east-1 used in this example)
 	3> Ensure an equivalent CentOS image is available in your AZ,Example: ami-02eac2c0129f6376b #CentOS-7x86_64 
-	4> Use  default VPC, subnet and Security Group (SG) where these nodes are in the same AZ. 
+	4> Use default VPC, subnet and Security Group (SG) where these nodes are in the same AZ. 
 	5> Record the SG to be used in the config files. Make sure the SG is open to all hosts in security group.
 
 Download scripts,CDP DC bits and licence info:
